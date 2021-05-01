@@ -1,0 +1,75 @@
+<form
+  action="URL"
+  autocomplete="on / off"
+  enctype=""
+  id="form"
+  method="GET / POST"
+  name="form"
+  novalidate
+>
+  <fieldset>
+    <legend>Title</legend>
+
+    <label for="first_name">Имя:</label>
+    <input type="text" id="first_name">
+
+    <label>Фамилия:
+      <input type="text">
+    </label>
+  </fieldset>
+
+  <select
+    autofocus
+    disabled
+    form="form"
+    multiple
+    name="select"
+    required
+    size="10"
+  >
+    <optgroup label="Group1">
+      <option
+        value="option1"
+        disabled
+        label="option1"
+      ></option>
+      <option value="option2" selected></option>
+    </optgroup>
+
+    <optgroup label="Group2" disabled>
+      <option value="option3"></option>
+    </optgroup>
+
+    <option value="option4"></option>
+  </select>
+
+  <textarea
+    autofocus
+    cols="30"
+    disabled
+    form="form"
+    maxlength="50"
+    name="textarea"
+    placeholder="Введите текст..."
+    readonly
+    required
+    rows="10"
+    wrap="hard / soft"
+  ></textarea>
+
+  <button
+    type="submit"
+    autofocus
+    disabled
+    form="form"
+    formaction="URL"
+    formenctype=""
+    formmethod="GET / POST"
+    formnovalidate
+    name="submit"
+  >
+    Кнопка для отправки формы
+  </button>
+  <button type="reset">Кнопка для сброса формы (очистки полей для ввода данных)</button>
+  <button type="button">Просто кнопка</button>
+</form>
